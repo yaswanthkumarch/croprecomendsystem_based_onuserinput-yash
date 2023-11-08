@@ -1,0 +1,73 @@
+/* Style for the container */
+
+.main {
+    max-width: "50%";
+}
+
+
+/* Style for the card */
+
+div.card {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+
+/* Style for the form */
+
+div.form {
+    padding: 20px;
+}
+
+
+/* Style for form inputs */
+
+input[type="text"] {
+    margin: 10px 0;
+    width: max-content;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* Style for form submit button */
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Style for form submit button on hover */
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#f {
+    text-align: center;
+    width: 290px;
+    align-items: center;
+    background-color: aquamarine;
+    padding-left: 90px;
+}
+
+#sp {
+    background-color: rgb(247, 245, 245);
+    padding-left: 40%;
+    padding-right: 60%;
+    width: 80px;
+    height: 90%;
+}
+
+
+/* Style for result text */
+
+p.result {
+    margin: 20px 0;
+    font-weight: bold;
+}
