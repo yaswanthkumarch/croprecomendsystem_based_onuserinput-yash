@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Yield Prediction</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="main">
+    <div >
+      <div >
+        <h1 align="center">Crop Yield Prediction</h1>
+      <div id=sp>
+        <form method="post" action="{{ url_for('predict') }}">
+          <div  id="f">
+            <input type="text" name="N" placeholder="Nitrogen (N)" ><hr>
+            <input type="text" name="P" placeholder="Phosphorus (P)" ><hr>
+            <input type="text" name="K" placeholder="Potassium (K)" ><hr>
+            <input type="text" name="temperature" placeholder="Temperature" ><hr>
+            <input type="text" name="humidity" placeholder="Humidity" ><hr>
+            <input type="text" name="pH" placeholder="pH" ><hr>
+            <input type="text" name="rainfall" placeholder="Rainfall" ><hr>
+            <div >
+              <div >
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+        <p><h1 style="text-align:center">{{ prediction_text}}</h1></p>
+      
+    </div>
+  </div>
+</body>
+</html>
